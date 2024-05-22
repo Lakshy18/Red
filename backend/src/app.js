@@ -66,4 +66,22 @@ app.post("/postData", jsonParser, async (req, res) => {
     res.status(400).json({ error: "data can't be added" });
   }
 });
+//
+app.post("/refreshAllData", async (req, res) => {
+  try {
+    await TableData.deleteMany({}, { timeout: 30000 });
+    await TableData.insertMany(data);
+    res.status(200).json({ message: "Item refreshed Successfully" });
+  } catch (error) {
+    res.status(400).json({ error: "Error while refreshing data" });
+  }
+});
+app.delete("/deleteAlldata", async (req, res) => {
+  try {
+    await TableData.deleteMany({}, { timeout: 30000 });
+    res.status(200).json({  message:"Data deleted successfully" });;
+  } catch (error) {
+    res.status(400).json({ error: "data can not be deleted" });
+  }
+});
 module.exports = app;
