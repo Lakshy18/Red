@@ -18,7 +18,7 @@ mongoose.set("strictQuery", false);
 
 
 // Port
-const port = 4000 || process.env.PORT;
+const port = 4000
 
 // Database url
 const dbURL =
