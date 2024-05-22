@@ -9,7 +9,7 @@ const DeleteData = ({ id }) => {
   const handleClick = async () => {
     const confirmed = confirm("Are you Sure!");
     if (confirmed) {
-      await axios.delete(`http://localhost:4000/delTableData/${id}`);
+      await axios.delete(`https://red-gx9ikti26-lakshy18s-projects.vercel.app/delTableData/${id}`);
       router.refresh();
     }
   };
