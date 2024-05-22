@@ -18,4 +18,4 @@ const tableDataSchema = new mongoose.Schema({
     required: true,
   },
 });
-module.exports = mongoose.model("Data", tableDataSchema);
+module.exports = mongoose.model("tableData", tableDataSchema);
