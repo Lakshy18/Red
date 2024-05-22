@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-
+const data = require("./data");
 const TableData = require("./models/dataSchema");
 
 // initializing express
