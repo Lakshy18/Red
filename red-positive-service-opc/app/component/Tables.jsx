@@ -1,9 +1,9 @@
 "use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import DeleteData from "./deleteData";
+import DeleteData from "./DeleteData";
 import EditTableData from "./EditTableData";
-import SendItems from "./sendItems";
+import SendItems from "./SendItems";
 // import { useRouter } from "next/navigation";
 
 const Tables = () => {
