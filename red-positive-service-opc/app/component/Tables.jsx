@@ -28,7 +28,7 @@ const Tables = () => {
     return () => {
       asyncFunction();
     };
-  },[tdata]);
+  });
   // console.log(tData);
   const handelCheck = (e) => {
     const { value, checked } = e.target;
