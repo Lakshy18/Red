@@ -25,16 +25,18 @@ const dbURL =
   "mongodb+srv://lakshyraj:lakshyraj@cluster0.kwp1tvo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Listing server on port 3000
-mongoose
-  .connect(dbURL)
-  .then((result) => {
-    console.log("Connected to Database");
+const connectionFunc = async () => {
+  try {
+    await mongoose
+      .connect(dbURL)
+      .then(() => console.log("Connected to Database"));
     // server listening
     app.listen(port, () => console.log(`App listening on port ${port}!`));
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+  } catch (error) {
+    console.log(error);
+  }
+};
+connectionFunc();
 
 // refreshing
 const refresh = async () => {
