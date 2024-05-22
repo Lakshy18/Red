@@ -21,7 +21,7 @@ const Tables = () => {
     //   // });
     //   // console.log(tData);
     const asyncFunction = async () => {
-      const data = await axios.get("http://localhost:4000/tableData");
+      const data = await axios.get("https://red-gx9ikti26-lakshy18s-projects.vercel.app/tableData");
       setTData(data.data);
       return;
     };
