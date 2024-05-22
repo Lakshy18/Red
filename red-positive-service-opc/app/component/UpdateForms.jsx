@@ -29,7 +29,7 @@ const UpdateForm = ({ isVisible, isClose, id }) => {
     // let jsonPostData = JSON.stringify(currPostData)
     // setPostdata(JSON.stringify(currPostData));
     await axios
-      .put(`http://localhost:4000/updateTableData/${id}`, {
+      .put(`https://red-gx9ikti26-lakshy18s-projects.vercel.app/updateTableData/${id}`, {
         name: name,
         mobileNumber: mobileNumber,
         email: email,
