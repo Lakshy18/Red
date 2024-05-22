@@ -27,7 +27,7 @@ const Forms = ({ isVisible, isClose }) => {
     // let jsonPostData = JSON.stringify(currPostData)
     // setPostdata(JSON.stringify(currPostData));
     await axios
-      .post("http://localhost:4000/postData", {
+      .post("https://red-gx9ikti26-lakshy18s-projects.vercel.app/postData", {
         name: name,
         mobileNumber: mobileNumber,
         email: email,
